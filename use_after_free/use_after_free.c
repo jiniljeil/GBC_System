@@ -11,8 +11,8 @@ int main(void) {
 	gets(buf) ; 
 	free(buf) ; 
 	
-	buf2 = (char *)malloc(sizeof(char) * 64) ; 
+	buf2 = (char *)malloc(sizeof(char) * 128) ; 
 
-	printf("buf: %s\n", buf2) ; 
+	printf("buf2: %s\n", buf2) ; 
 	return 0;  
 } 	
