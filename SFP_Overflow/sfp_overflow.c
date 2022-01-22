@@ -9,7 +9,8 @@ void func(char *src)
 	puts(buf) ; 	
 }
 
-void main(int argc, char ** argv)
+int main(int argc, char ** argv)
 { 
-	func(argv[1]);  
+	func(argv[1]);
+	return 0 ;   
 }	

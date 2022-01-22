@@ -18,9 +18,9 @@ void uaf() {
 
 int main(void) { 
 	test * t ;
-	char * string ; 
+	test * t2 ; 
 	
-	t = malloc(128) ; 
+	t = (test *)malloc(sizeof(test)); 
 	
 	strcpy(t->name, "John"); 
 	t->print = (void *)printName; 
@@ -28,10 +28,11 @@ int main(void) {
 	t->print(t); 
 	free(t) ; 
 	
-	string = malloc(128) ; 
-	scanf("%s", string) ; 
+	t2 = (test *)malloc(sizeof(test)) ; 
+	scanf("%s", t2->name) ; 
 	
-	t->print(t);  
+	t2->print(t2);  
 	
+	free(t2); 
 	return 0; 
 } 
